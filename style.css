@@ -1,0 +1,74 @@
+html, body{
+  margin: 0;
+  height: 100%;
+}
+body{
+  font-family: 'Open Sans Condensed', sans-serif;
+  letter-spacing: 1px;
+  color: white;
+  font-size: 1.25rem;
+}
+.container {
+  height: 100%;
+  background-image: url('images/woods.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  border: 10px solid white;
+  border-radius: 50px;
+}
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* top,left 상대적으로 50% 띄우는데 css좌표는 왼쪽 상단이 좌표이므로, content가 가지고있는 너비와 높이의 50%를 빼주어야함 */
+  transform: translate(-50%, -50%);
+  text-align: center;  
+}
+.content h1 {
+  font-family: 'Calistoga', cursive;
+  margin: 0;
+  font-size: 4rem;
+  color: rgb(12, 134, 134);
+  text-shadow: 2px 1px 5px rgb(2, 59, 59);
+  transition: 0.5s;
+}
+.content h1:hover{
+  color: transparent;
+}
+.content p span{
+  color: lightgreen;
+}
+.btn-readmore{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.418);
+  text-transform: capitalize;
+  border: 1px solid rgba(255, 255, 255, 0.418);
+  border-radius: 3px;
+  padding: 5px 20px;
+  /* padding 값 1개는 상하좌우, 2개는 상하, 좌우 */
+  font-size: 0.813rem;
+  transition: 0.3s;
+}
+.btn-readmore:hover{
+  background-color: rgba(0, 0, 0, 0.294);
+  border: 1px solid rgba(0, 0, 0, 0.294);
+}
+.sns {
+  margin-top: 50px;
+}
+.sns i{
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 30px;
+  transition: 0.5s;
+  margin: 5px;
+}
+.sns i:hover{
+  background-color: rgba(0, 0, 0, 0.294);
+  border: 1px solid rgba(0, 0, 0, 0.294);
+}
